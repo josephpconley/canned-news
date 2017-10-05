@@ -114,7 +114,7 @@ p, ul {
       <td style="overflow-wrap: break-word;padding:20px;" align="left">
         
   <div style="color: #787878; line-height: 120%; text-align: left; font-family: inherit;">
-    <p style="font-size: 14px; line-height: 120%;"><span style="font-size: 10px; line-height: 12px; font-family: 'Source Sans Pro', sans-serif; color: #808080;">Technology News for Thursday, September 7th</span></p>
+    <p style="font-size: 14px; line-height: 120%;"><span style="font-size: 10px; line-height: 12px; font-family: 'Source Sans Pro', sans-serif; color: #808080;">Technology News for {{ date }}</span></p>
   </div>
 
       </td>
@@ -239,9 +239,8 @@ p, ul {
         
   <div style="color: #000; line-height: 120%; text-align: left; font-family: inherit;">
     <p style="font-size: 14px; line-height: 120%;"><span style="font-size: 24px; line-height: 28.8px;">{{ title }}</span></p>
-<p style="line-height: 120%; font-size: 14px;"><span style="line-height: 16.8px; font-size: 14px; color: #808080;">{{ date }}</span></p>
+    <p style="font-size: 14px; line-height: 120%; text-align: left;"><span style="font-size: 14px; line-height: 16.8px; color: #808080;">A daily newsletter from <a style="color: #003366; text-decoration: none;" href="{{ homepage_url }}" target="_blank" rel="noopener noreferrer">{{ homepage_name }}</a></span></p>
   </div>
-
       </td>
     </tr>
   </tbody>
@@ -253,21 +252,7 @@ p, ul {
 <td style="vertical-align:top;width:300px;">
   <![endif]-->
   <div class="email-col-50 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
-    
-<table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-  <tbody>
-    <tr>
-      <td style="overflow-wrap: break-word;padding:20px;" align="left">
-        
-  <div style="color: #000; line-height: 120%; text-align: left; font-family: inherit;">
-    <p style="font-size: 14px; line-height: 120%; text-align: right;"><span style="font-size: 14px; line-height: 16.8px; color: #808080;">A daily newsletter from</span></p>
-<p style="font-size: 14px; line-height: 120%; text-align: right;"><span style="font-size: 24px; line-height: 28.8px; color: #003366;"> <a style="color: #003366; text-decoration: none;" href="{{ homepage_url }}" target="_blank" rel="noopener noreferrer">{{ homepage_name }}</a></span></p>
-  </div>
 
-      </td>
-    </tr>
-  </tbody>
-</table>
 
   </div>
   <!--[if mso | IE]>
@@ -550,7 +535,7 @@ p, ul {
       <td style="overflow-wrap: break-word;padding:20px;" align="left">
         
   <div style="color: #000; line-height: 120%; text-align: left; font-family: inherit;">
-    <div style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 12px; color: #999999; line-height: 14.4px;">You received this email because you signed up for the newsletter at {{homepage_url}}. To unsubscribe from all emails we send, <a style="color: #999999" href="{{ unsubscribe }}" target="_blank">click here</a>.</span></div>
+    <div style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 12px; color: #999999; line-height: 14.4px;">You received this email because you signed up for the newsletter at {{homepage_url}}. To unsubscribe from all emails we send, <a style="color: #999999" href="{{ unsubscribe }}" target="_blank">click here</a>. To change your subscriptions, email us at info@canned.news.</span></div>
 <div style="font-family: arial, helvetica, sans-serif;">&nbsp;</div>
 <div style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 12px; color: #999999; line-height: 14.4px;"></span></div>
   </div>

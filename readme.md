@@ -45,7 +45,35 @@ You can find bash scripts for Docker in the `/docker` folder and a database sche
 
 ### Local Setup
 
+### Prerequisites
+
 Coming soon!
+
+### Creating a Newsletter
+
+Newsletters are currently created manually. You have to add the newsletter to the database, to Feedbin, and create a new list segment in Mailchimp. Eventually I'll get around to automating this process, but for now, here's how it works.
+
+#### 1. Add the RSS feed to Feedbin
+
+Most major news outlets and blogs offer RSS feeds. For example, here are RSS feeds for the following news outlets:
+
+- [Wall Street Journal](http://www.wsj.com/public/page/rss_news_and_feeds.html)
+- [New York Times](http://www.nytimes.com/services/xml/rss/index.html)
+- [Washington Post](https://www.washingtonpost.com/rss-feeds/2014/08/04/ab6f109a-1bf7-11e4-ae54-0cfe1f974f8a_story.html?utm_term=.bda297015343)
+- [The Guardian](https://www.theguardian.com/help/feeds)
+- [USA Today](https://www.usatoday.com/rss/)
+
+Add the feeds you want to Feedbin and tag them. This tag name will become the name of the Newsletter.
+
+#### 2. Create a Segment in Mailchimp
+
+All subscribers are currently stored in a single list with a segment for each newsletter. Create a new group for this Newsletter. Title it the same thing as the tag on Feedbin.
+
+#### 3. Add the Newsletter to your Database
+
+Next the application's database needs to know about the new tag. Create a new Newsletter in the database. Be sure to include the segment ID in the database entry.
+
+Next time you run the collector, articles should be retrieved for the new Newsletter.
 
 ### Testing
 

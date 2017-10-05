@@ -3,6 +3,7 @@
   "scripts": {
     "app:build": "bash docker/build.local.sh",
     "app:push": "bash docker/push.local.sh",
+    "app:local:collect-all": "npm run collector:local:run && npm run url-resolver:local:run && npm run summarizer:local:run && npm run image-extractor:local:run && npm run socializer:local:run",
     "app:deploy": "docker run --rm --env-file $(pwd)/.env.prod -v $(pwd)/docker:/docker chickenzord/hyper sh /docker/deploy.hyper.sh",
     "db:prod:up": "sh docker/dbup.hyper.sh",
     "db:prod:migrate": "hyper exec -it fbm-postgres-1 psql -U postgres -a -f /database/schema.sql",
